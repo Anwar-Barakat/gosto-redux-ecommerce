@@ -44,7 +44,14 @@
       color: $text;
     }
     button {
-      @include width(200px, 50px, linear-gradient(90deg, #ff4267 40%, #ff4b2e 100%), $white, 40px, none);
+      @include width(
+        200px,
+        50px,
+        linear-gradient(90deg, #ff4267 40%, #ff4b2e 100%),
+        $white,
+        40px,
+        none
+      );
       margin: 50px 0;
     }
 
