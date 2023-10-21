@@ -3,7 +3,7 @@ import React from "react";
 const Heading = ({ title, desc }) => {
   return (
     <section className="heading">
-      <h2>{title}</h2>
+      <h2 className="text-red-500">{title}</h2>
       <p>{desc}</p>
     </section>
   );

@@ -8,7 +8,10 @@ const Card = () => {
         return (
           <div className="card" key={index}>
             <div className="left">
-              <img src={item.image} alt={item.name} />
+              <img
+                src={require("../../assets/images/hero/" + item.cover)}
+                alt={item.name}
+              />
             </div>
             <div className="right">
               <h4>{item.name}</h4>

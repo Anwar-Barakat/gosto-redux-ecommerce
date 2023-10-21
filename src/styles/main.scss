@@ -14,7 +14,7 @@
 
 body {
   background: $light;
-  font-family: "Poppins", sans-serif;
+  font-family: "Cairo", sans-serif;
 }
 a {
   @include default;
@@ -145,12 +145,12 @@ footer {
 .topproduct {
   position: relative;
 }*/
-.modelOpen {
-  @include positions(absolute, -50px, none, 0, none, 100%, 130vh);
+.modalOpen {
+  @include positions(absolute, -50px, none, 0, none, 100%, 100vh);
   z-index: 999999;
   .onClickImage {
     position: relative;
-    @include positions(fixed, 0px, none, 0, none, 100%, 110vh);
+    @include positions(fixed, 0px, none, 0, none, 100%, 100vh);
     @include flex(center, center, center);
 
     img {
@@ -178,7 +178,7 @@ footer {
     }
   }
 }
-.modelClose {
+.modalClose {
   img,
   .button {
     display: none;

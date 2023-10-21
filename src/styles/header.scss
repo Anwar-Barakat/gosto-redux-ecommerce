@@ -47,6 +47,7 @@ header {
       }
     }
     &_user {
+      display: flex;
       .heIcon {
         @include pa_ma(none, 0 $md);
       }
