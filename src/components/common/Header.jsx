@@ -6,14 +6,19 @@ import { BiSearch } from "react-icons/bi";
 import { BsBagCheck } from "react-icons/bs";
 import { RiUser3Line } from "react-icons/ri";
 import { AiOutlineClose, AiOutlineHeart, AiOutlineMenu } from "react-icons/ai";
+import { useSelector } from "react-redux";
 
 const Header = () => {
+  const { cart } = useSelector((state) => state.cart);
+
+  console.log(cart);
   window.addEventListener("scroll", () => {
     const header = document.querySelector(".header");
     header.classList.toggle("active", window.scrollY > 100);
   });
 
   const [mobile, setMobile] = useState(false);
+  const [cartList, setCartList] = useState(false);
 
   return (
     <>
@@ -58,10 +63,49 @@ const Header = () => {
               <AiOutlineHeart className="userIcon heIcon" />
             </div>
             <div className="right_cart">
-              <button className="button">
+              <button className="button" onClick={() => setCartList(!cartList)}>
                 <BsBagCheck className="shop heIcon" />
-                My Cart(0)
+                My Cart({cart.length})
               </button>
+              <div className={cartList ? "showCart" : "hideCart"}>
+                {cart.length ? (
+                  <section className="details">
+                    <div className="details_title">
+                      <h3>Photo</h3>
+                      <p>Product details</p>
+                    </div>
+                    {cart.map((item) => (
+                      <div className="details_content" key={item.id}>
+                        <div className="details_content_img">
+                          <Link to={`/cart/${item.id}`}>
+                            <img
+                              src={require("../assets/images/product/" +
+                                item.cover)}
+                              alt={item.title}
+                            />
+                          </Link>
+                        </div>
+                        <div className="details_content_detail">
+                          <div className="details_content_detail_price">
+                            <p>{item.title.slice(0, 20)}...</p>
+                            <p>Price: ${item.price}</p>
+                            <p>QTY: {item.amount}</p>
+                          </div>
+                        </div>
+                        <div className="details_content_detail_icon"></div>
+                      </div>
+                    ))}
+                  </section>
+                ) : (
+                  <section className="empty">
+                    <p>Your cart is empty</p>
+                    <img
+                      src={require("../assets/images/cart.png")}
+                      alt="empty cart"
+                    />
+                  </section>
+                )}
+              </div>
             </div>
           </div>
         </div>

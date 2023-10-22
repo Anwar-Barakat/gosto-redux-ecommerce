@@ -13,7 +13,7 @@ const Price = () => {
         <div className="content">
           {prices.map((plan) => {
             return (
-              <div className="box">
+              <div className="box" key={plan.id}>
                 <h3>{plan.name}</h3>
                 <h1>
                   <span>$</span>
@@ -23,8 +23,8 @@ const Price = () => {
                 <p>{plan.desc}</p>
                 <button className="">get start </button>
                 <ul>
-                  {plan.list.map((item) => (
-                    <li>
+                  {plan.list.map((item, index) => (
+                    <li key={index}>
                       <i>{item.icon}</i>
                       <span>{item.para}</span>
                     </li>

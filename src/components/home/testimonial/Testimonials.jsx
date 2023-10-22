@@ -11,8 +11,8 @@ const Testimonials = () => {
         desc="Meet our latest templates uploaded to the marketplace."
       />
       <div className="content">
-        {customers.map((customer) => (
-          <div className="card">
+        {customers.map((customer, index) => (
+          <div className="card" key={index}>
             <button className="button">
               <ImQuotesRight />
             </button>

@@ -11,7 +11,7 @@ const Blog = () => {
       />
       <div className="posts">
         {blogs.slice(0, 3).map((blog) => (
-          <div className="post">
+          <div className="post" key={blog.id}>
             <div className="content">
               <div className="img">
                 <img

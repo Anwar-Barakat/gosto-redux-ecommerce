@@ -1,8 +1,13 @@
 import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineHeart } from "react-icons/ai";
 import { FiSearch, FiShoppingBag } from "react-icons/fi";
+import { useDispatch, useSelector } from "react-redux";
+import { addToCart } from "../../../features/slices/cartSlice";
 
 const ProductItem = ({ data }) => {
+  const dispatch = useDispatch();
+  const { cart } = useSelector((state) => state.cart);
+
   const [openImage, setOpenImage] = useState(false);
   const [image, setImage] = useState("");
 
@@ -22,7 +27,10 @@ const ProductItem = ({ data }) => {
                   alt={product.name}
                 />
                 <div className="overlay transition duration-150">
-                  <button className="button">
+                  <button
+                    className="button"
+                    onClick={() => dispatch(addToCart(product))}
+                  >
                     <FiShoppingBag />
                   </button>
                   <button className="button">
