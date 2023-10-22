@@ -261,7 +261,7 @@ export const prices = [
   {
     id: 2,
     name: "Premium",
-    price: "26",
+    price: "29",
     desc: "Declutter your mind and save time with Premium.",
     list: [
       {

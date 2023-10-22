@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "../assets/images/logo.svg";
+import logo from "../assets/images/logo.png";
 import { navList } from "../assets/data/data";
 import { Link } from "react-router-dom";
 import { BiSearch } from "react-icons/bi";
