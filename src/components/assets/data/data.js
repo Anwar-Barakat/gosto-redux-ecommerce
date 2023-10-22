@@ -56,10 +56,11 @@ export const hero = [
     items: "7",
   },
 ];
+
 export const products = [
   {
     id: 1,
-    cover: "1-1-1.jpg",
+    cover: "5-1-1.jpg",
     title: "Floating 2021 iPhone 12 Mockups (PSD)",
     author: "by Blueskytechco in Mockups",
     price: 30.0,
@@ -68,20 +69,20 @@ export const products = [
   },
   {
     id: 2,
-    cover: "2-1-1.jpg",
-    title: "ASU - BRA Mockups (PSD)",
+    cover: "8-1.jpg",
+    title: "Glassmorphism Mockups (PSD)",
     author: "by Blueskytechco in Mockups",
-    price: 10.0,
-    category: "mockups",
+    price: "30.00",
+    category: "icons",
     qty: 0,
   },
   {
     id: 3,
-    cover: "3-1-1.jpg",
-    title: "Business Cards Mockups (PSD)",
+    cover: "6-3.jpg",
+    title: "Ecommerce Mockups (PSD)",
     author: "by Blueskytechco in Mockups",
-    price: 20.0,
-    category: "images stocks",
+    price: "30.00",
+    category: "web theme",
     qty: 0,
   },
   {
@@ -95,7 +96,7 @@ export const products = [
   },
   {
     id: 5,
-    cover: "5-1-1.jpg",
+    cover: "1-1-1.jpg",
     title: "Floating 2022 iPhone 13 Mockups (PSD)",
     author: "by Blueskytechco in Mockups",
     price: "50.00",
@@ -104,11 +105,11 @@ export const products = [
   },
   {
     id: 6,
-    cover: "6-3.jpg",
-    title: "Ecommerce Mockups (PSD)",
+    cover: "3-1-1.jpg",
+    title: "Business Cards Mockups (PSD)",
     author: "by Blueskytechco in Mockups",
-    price: "30.00",
-    category: "web theme",
+    price: 20.0,
+    category: "images stocks",
     qty: 0,
   },
   {
@@ -122,30 +123,32 @@ export const products = [
   },
   {
     id: 8,
-    cover: "8-1.jpg",
-    title: "Glassmorphism Mockups (PSD)",
+    cover: "2-1-1.jpg",
+    title: "ASU - BRA Mockups (PSD)",
     author: "by Blueskytechco in Mockups",
-    price: "30.00",
-    category: "icons",
+    price: 10.0,
+    category: "mockups",
     qty: 0,
   },
 ];
-export const banner = [
+
+export const banners = [
   {
     id: 1,
     title1: "Simple IPhone ",
     title2: "Mockups Design PSD, Ai, EPS",
     desc: "Sale 30% Off For Members",
-    cover: "../images/banner/b2.png",
+    cover: "b2.png",
   },
   {
     id: 2,
     title1: "Mockup PSD",
     title2: "50+ Ui Screen Mockups",
     desc: "Sale 30% Off For Members",
-    cover: "../images/banner/b1.png",
+    cover: "b1.png",
   },
 ];
+
 export const topProducts = [
   {
     id: 20,
@@ -221,7 +224,8 @@ export const topProducts = [
     qty: 0,
   },
 ];
-export const price = [
+
+export const prices = [
   {
     id: 1,
     name: "Free Trial",
@@ -319,7 +323,8 @@ export const price = [
     ],
   },
 ];
-export const customer = [
+
+export const customers = [
   {
     id: 1,
     desc: "Congue condimentum et non eu arcu sociis aenean vivamus quisque. Porta purus urna. Massa id blandit enim cursus ante, nec consectetuer imperdiet ipsum",
@@ -339,7 +344,8 @@ export const customer = [
     post: "Marketing Company Director",
   },
 ];
-export const blog = [
+
+export const blogs = [
   {
     id: 1,
     date: "October 27, 2021",
