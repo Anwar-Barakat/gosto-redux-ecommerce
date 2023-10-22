@@ -5,12 +5,10 @@ import { FiSearch, FiShoppingBag } from "react-icons/fi";
 const ProductItem = ({ data }) => {
   const [openImage, setOpenImage] = useState(false);
   const [image, setImage] = useState("");
-  console.log(data);
 
   const onOpenImage = (src) => {
     setImage(src);
     setOpenImage(true);
-    console.log(image);
   };
   return (
     <>
@@ -23,15 +21,15 @@ const ProductItem = ({ data }) => {
                   src={require("../../assets/images/product/" + product.cover)}
                   alt={product.name}
                 />
-                <div class="overlay transition duration-150">
-                  <button class="button">
+                <div className="overlay transition duration-150">
+                  <button className="button">
                     <FiShoppingBag />
                   </button>
-                  <button class="button">
+                  <button className="button">
                     <AiOutlineHeart />
                   </button>
                   <button
-                    class="button"
+                    className="button"
                     onClick={() => onOpenImage(product.cover)}
                   >
                     <FiSearch />

@@ -69,7 +69,7 @@ export const products = [
   {
     id: 2,
     cover: "2-1-1.jpg",
-    title: "Floating 2021 iPhone 12 Mockups (PSD)",
+    title: "ASU - BRA Mockups (PSD)",
     author: "by Blueskytechco in Mockups",
     price: 10.0,
     category: "mockups",
@@ -78,7 +78,7 @@ export const products = [
   {
     id: 3,
     cover: "3-1-1.jpg",
-    title: "Floating 2021 iPhone 12 Mockups (PSD)",
+    title: "Business Cards Mockups (PSD)",
     author: "by Blueskytechco in Mockups",
     price: 20.0,
     category: "images stocks",
@@ -87,7 +87,7 @@ export const products = [
   {
     id: 4,
     cover: "4-3.jpg",
-    title: "Floating 2021 iPhone 12 Mockups (PSD)",
+    title: "Architecture Mockups (PSD)",
     author: "by Blueskytechco in Mockups",
     price: 40.0,
     category: "images stocks",
@@ -96,7 +96,7 @@ export const products = [
   {
     id: 5,
     cover: "5-1-1.jpg",
-    title: "Floating 2021 iPhone 12 Mockups (PSD)",
+    title: "Floating 2022 iPhone 13 Mockups (PSD)",
     author: "by Blueskytechco in Mockups",
     price: "50.00",
     category: "web theme",
@@ -105,7 +105,7 @@ export const products = [
   {
     id: 6,
     cover: "6-3.jpg",
-    title: "Floating 2021 iPhone 12 Mockups (PSD)",
+    title: "Ecommerce Mockups (PSD)",
     author: "by Blueskytechco in Mockups",
     price: "30.00",
     category: "web theme",
@@ -114,7 +114,7 @@ export const products = [
   {
     id: 7,
     cover: "7-1-1.jpg",
-    title: "Floating 2021 iPhone 12 Mockups (PSD)",
+    title: "Learning Mockups (PSD)",
     author: "by Blueskytechco in Mockups",
     price: "30.00",
     category: "icons",
@@ -123,7 +123,7 @@ export const products = [
   {
     id: 8,
     cover: "8-1.jpg",
-    title: "Floating 2021 iPhone 12 Mockups (PSD)",
+    title: "Glassmorphism Mockups (PSD)",
     author: "by Blueskytechco in Mockups",
     price: "30.00",
     category: "icons",
