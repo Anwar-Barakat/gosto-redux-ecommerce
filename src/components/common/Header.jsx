@@ -5,13 +5,19 @@ import { Link } from "react-router-dom";
 import { BiSearch } from "react-icons/bi";
 import { BsBagCheck } from "react-icons/bs";
 import { RiUser3Line } from "react-icons/ri";
-import { AiOutlineClose, AiOutlineHeart, AiOutlineMenu } from "react-icons/ai";
-import { useSelector } from "react-redux";
+import {
+  AiOutlineClose,
+  AiOutlineDelete,
+  AiOutlineHeart,
+  AiOutlineMenu,
+} from "react-icons/ai";
+import { useDispatch, useSelector } from "react-redux";
+import { removeFromCart } from "../../features/slices/cartSlice";
 
 const Header = () => {
-  const { cart } = useSelector((state) => state.cart);
+  const dispatch = useDispatch();
+  const { cart, totalAmount, totalPrice } = useSelector((state) => state.cart);
 
-  console.log(cart);
   window.addEventListener("scroll", () => {
     const header = document.querySelector(".header");
     header.classList.toggle("active", window.scrollY > 100);
@@ -43,9 +49,9 @@ const Header = () => {
             </div>
             <div className="center">
               <ul className={mobile ? "mobile-nav" : "menu"}>
-                {navList.map((ele, index) => {
+                {navList.map((ele) => {
                   return (
-                    <li key={index}>
+                    <li key={ele.text}>
                       <Link to={ele.path}>{ele.text}</Link>
                     </li>
                   );
@@ -79,8 +85,7 @@ const Header = () => {
                         <div className="details_content_img">
                           <Link to={`/cart/${item.id}`}>
                             <img
-                              src={require("../assets/images/product/" +
-                                item.cover)}
+                              src={require(`../assets/images/product/${item.cover}`)}
                               alt={item.title}
                             />
                           </Link>
@@ -89,12 +94,32 @@ const Header = () => {
                           <div className="details_content_detail_price">
                             <p>{item.title.slice(0, 20)}...</p>
                             <p>Price: ${item.price}</p>
-                            <p>QTY: {item.amount}</p>
+                            <p>QTY: {item.qty}</p>
                           </div>
                         </div>
-                        <div className="details_content_detail_icon"></div>
+                        <div
+                          className="details_content_detail_icon"
+                          onClick={() => {
+                            dispatch(removeFromCart(item));
+                          }}
+                        >
+                          <i>
+                            <AiOutlineDelete />
+                          </i>
+                        </div>
                       </div>
                     ))}
+                    <hr />
+                    <div className="details_total">
+                      <h4>
+                        <span>Total Amount: </span>
+                        <span> {totalAmount}</span>
+                      </h4>
+                      <h4>
+                        <span>Total Price: </span>
+                        <span> ${totalPrice}</span>
+                      </h4>
+                    </div>
                   </section>
                 ) : (
                   <section className="empty">

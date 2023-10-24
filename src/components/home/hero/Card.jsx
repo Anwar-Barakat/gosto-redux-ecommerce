@@ -9,7 +9,7 @@ const Card = () => {
           <div className="card" key={index}>
             <div className="left">
               <img
-                src={require("../../assets/images/hero/" + item.cover)}
+                src={require(`../../assets/images/hero/${item.cover}`)}
                 alt={item.name}
               />
             </div>

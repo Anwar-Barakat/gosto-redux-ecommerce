@@ -11,7 +11,7 @@ const Banner = () => {
               <div className="content">
                 <div className="img">
                   <img
-                    src={require("../../assets/images/banner/" + item.cover)}
+                    src={require(`../../assets/images/banner/${item.cover}`)}
                     alt={item.title1}
                   />
                 </div>

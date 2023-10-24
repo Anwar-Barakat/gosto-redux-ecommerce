@@ -23,7 +23,7 @@ const ProductItem = ({ data }) => {
             <div className="box" key={product.id}>
               <div className="img duration-300 ease-in-out">
                 <img
-                  src={require("../../assets/images/product/" + product.cover)}
+                  src={require(`../../assets/images/product/${product.cover}`)}
                   alt={product.name}
                 />
                 <div className="overlay transition duration-150">

@@ -95,6 +95,11 @@ header {
       }
       &_total {
         padding-top: 7px;
+        h4 {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
       }
     }
     .hideCart {
