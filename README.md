@@ -20,10 +20,6 @@ They are often built using a monolithic architecture, which means that all of th
 
 A React + Redux Toolkit shopping cart website would be easier to maintain and update than a traditional website. This is because React and Redux Toolkit are both designed to be modular and scalable.
 
-### Conclusion
-
-A React + Redux Toolkit shopping cart website would be a modern, scalable, and performant application. It would be easier to maintain and update than a traditional website, and it would provide a good user experience.
-
 #### Take a look
 
-![Website Overview](./public/images/adara%20website%20.png)
+![Website Overview](./public/images/adara.jpg)
