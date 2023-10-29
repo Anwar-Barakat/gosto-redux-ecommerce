@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+## React + Redux Toolkit Shopping Cart Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Introduction
 
-## Available Scripts
+Redux Toolkit is a powerful framework for managing state in React applications.
 
-In the project directory, you can run:
+### Problem
 
-### `npm start`
+Many existing shopping cart websites are difficult to maintain and update.
+They are often built using a monolithic architecture, which means that all of the code is coupled together. This makes it difficult to add new features or fix bugs without affecting the rest of the application.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Solution
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+A React + Redux Toolkit shopping cart website would be easier to maintain and update than a traditional website. This is because React and Redux Toolkit are both designed to be modular and scalable.
 
-### `npm test`
+### Implementation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* The application would be divided into separate components, such as a header, footer, product list, and shopping cart.
+* Each component would be responsible for its own state management.
+* Redux Toolkit would be used to manage the global state of the application, such as the contents of the shopping cart.
+* The components would interact with each other through Redux actions.
 
-### `npm run build`
+### Conclusion
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+A React + Redux Toolkit shopping cart website would be a modern, scalable, and performant application. It would be easier to maintain and update than a traditional website, and it would provide a good user experience.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### Take a look
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Website Overview](./public/images/adara%20website%20.png)

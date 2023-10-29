@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import Heading from "../../common/Heading";
 import ProductItem from "../product/ProductItem";
-import { topProducts } from "../../assets/data/data";
+import { products } from "../../assets/data/data";
 
 const TopProduct = () => {
-  const [data, setData] = useState(topProducts);
+  const [data, setData] = useState(products);
   const allCategories = [
     "all",
     ...new Set(data.map((product) => product.category)),
@@ -12,10 +12,10 @@ const TopProduct = () => {
   const [category, setCategory] = useState(allCategories);
 
   const filteringHandler = (cat) => {
-    const filtering = topProducts.filter((product) => product.category === cat);
+    const filtering = products.filter((product) => product.category === cat);
     setData(filtering);
 
-    if (cat === "all") setData(topProducts);
+    if (cat === "all") setData(products);
   };
   return (
     <section className="topproduct">

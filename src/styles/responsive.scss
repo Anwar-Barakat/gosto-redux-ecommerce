@@ -102,3 +102,41 @@
     }
   }
 }
+
+@include media-sm {
+  .cards {
+    @include grid(repeat(1, 1fr), 30px);
+  }
+
+  .topproduct,
+  .product {
+    .product_items {
+      @include grid(repeat(1, 1fr), 30px);
+    }
+  }
+  .category {
+    @include flex(center, space-around, row);
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+
+    button {
+      margin: 0 !important;
+    }
+  }
+  .customer {
+    .content {
+      @include grid(repeat(1, 1fr), 30px);
+    }
+  }
+  article .details_content {
+    flex-direction: column;
+    width: 100%;
+  }
+  article .details_content_img {
+    width: 100% !important;
+  }
+  article .details_content_detail {
+    width: 100% !important;
+  }
+}
