@@ -1,7 +1,7 @@
 import React from "react";
 import { banners } from "../../assets/data/data";
 
-const Banner = () => {
+const BannerSection = () => {
   return (
     <section className="banner">
       <div className="posts">
@@ -30,4 +30,4 @@ const Banner = () => {
   );
 };
 
-export default Banner;
+export default BannerSection;

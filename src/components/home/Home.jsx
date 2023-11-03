@@ -6,7 +6,7 @@ import TopProduct from "./topProduct/TopProduct";
 import Price from "./price/Price";
 import Testimonials from "./testimonial/Testimonials";
 import Blog from "./blog/Blog";
-import Banner from "./banner/Banner";
+import BannerSection from "./banner/BannerSection";
 
 const Home = () => {
   return (
@@ -14,7 +14,7 @@ const Home = () => {
       <Hero />
       <Card />
       <Product />
-      <Banner />
+      <BannerSection />
       <TopProduct />
       <Price />
       <Testimonials />
